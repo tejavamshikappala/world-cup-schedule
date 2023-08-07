@@ -1,0 +1,159 @@
+.white {
+  overflow: auto;
+  background-color: rgba(242, 234, 228, 0.929);
+
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.black {
+  background-color: #242526;
+  color: #fff;
+  border-bottom: 1px solid white;
+  overflow: auto;
+}
+.white1 {
+  color: black;
+}
+.black1 {
+  color: #fff;
+}
+
+.HeaderOne {
+  padding: 0px 30px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.circle {
+  font-size: 22px;
+  margin-top: 0px;
+}
+
+.for-Link {
+  text-decoration: none;
+
+  font-family: 'Roboto';
+  margin-left: 10px;
+}
+.for-Link1 {
+  text-decoration: none;
+
+  font-family: 'Roboto';
+  margin-left: 10px;
+  margin-bottom: 0px;
+  margin-top: 6px;
+}
+h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.HeaderOne > div > h1 {
+  font-size: 16px;
+  font-weight: bold;
+  align-self: flex-end;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.for-logo {
+  border-radius: 50%;
+
+  color: #fff;
+  height: 40px;
+  width: 30px;
+}
+.for-logo-1 {
+  border-radius: 50%;
+  width: 30px;
+  color: #fff;
+  height: 40px;
+}
+
+.div-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mode-img {
+  width: 20px;
+  margin: 0px;
+}
+
+.mode-imgDark {
+  width: 20px;
+  margin: 0px;
+}
+@media screen and (max-width: 600px) {
+  .HeaderOne > div > h1 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .for-Link {
+    display: none;
+  }
+  .menu {
+    gap: 1vmax;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .menu {
+    width: 30vmin;
+  }
+  .div-row h1 {
+    display: none;
+  }
+  .menu {
+    gap: 0.3vmax;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .for-Link1 {
+    display: none;
+  }
+}
+
+.forMode {
+  padding: 0px;
+  padding-top: 4px;
+  background-color: transparent;
+  border: none;
+  align-self: center;
+}
+
+.forAnimate {
+  transform: translateX(50%);
+}
+
+.forHomeImage {
+  width: 23px;
+
+  color: white;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2px 3px;
+  border: 1px solid white;
+  margin-bottom: 0px;
+}
+.forHomeImage1 {
+  width: 23px;
+
+  color: white;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 2px 3px;
+  border: 1px solid black;
+}

@@ -1,0 +1,55 @@
+.outer-one-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  align-items: center;
+  height: calc(100vh - 60px);
+}
+
+.whiteBackground {
+  background-color: rgba(242, 234, 228, 0.929);
+  color: black;
+}
+.blackBackground {
+  background-color: #121212;
+  color: #fff;
+}
+.forButtonWhite {
+  background-color: #121212;
+
+  color: #fff;
+
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.forButtonBlack {
+  background-color: rgba(242, 234, 228, 0.929);
+  color: black;
+
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.forImageNotFound {
+  width: 32vw;
+  width: 350px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 400px) {
+  .forImageNotFound {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .whiteBackground {
+    justify-content: center;
+  }
+  .blackBackground {
+    justify-content: center;
+  }
+}

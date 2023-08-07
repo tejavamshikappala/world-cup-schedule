@@ -1,0 +1,342 @@
+.whiteHome {
+  background-color: rgba(242, 234, 228, 0.929);
+  color: black;
+}
+
+.blackHome {
+  background-color: #121212;
+  color: #fff;
+}
+
+.Outer-Home {
+  /* background-color: rgb(9, 5, 20); */
+  display: flex;
+  flex-direction: row;
+  font-family: 'Lucida Sans Unicode';
+  height: calc(100vh - 60px);
+  overflow: auto;
+}
+.Outer-Home h2:first-child {
+  margin-top: 6%;
+}
+
+.Outer-Home h2 > span {
+  color: red;
+}
+
+h2 {
+  font-size: 58px;
+  margin: 10px;
+  margin-left: 32px;
+  text-transform: uppercase;
+}
+.fortrophy {
+  width: 200px;
+  height: 300px;
+}
+
+.for-image-div {
+  display: none;
+}
+
+.rowInside {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+  .Outer-Home {
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: calc(100vh - 60px);
+    align-items: center;
+  }
+
+  .for-image-div {
+    order: 0;
+    display: flex;
+    background-color: black;
+    border-radius: 20px;
+
+    margin-top: 20px;
+    animation: move 2s ease-in-out 1;
+  }
+
+  @keyframes move {
+    0% {
+      transform: scale(0) rotateY(360deg) skew(20deg, 20deg);
+    }
+  }
+
+  .Outer-Home div:first-child {
+    width: 60%;
+    order: 1;
+  }
+
+  h2 {
+    /*  font-size: 30px;*/
+    font-size: 5vw;
+    margin-right: 0px;
+  }
+
+  .rowInside {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .Outer-Home {
+    min-height: calc(100vh - 60px);
+    align-items: center;
+  }
+  .for-image-div {
+    display: flex;
+    background-color: black;
+    border-radius: 20px;
+    margin-left: 0px;
+    animation: move 2s ease-in-out 1;
+  }
+  @keyframes move {
+    0% {
+      transform: scale(0) rotateY(360deg) skew(20deg, 20deg);
+    }
+  }
+  .Outer-Home div:first-child {
+    width: 60%;
+  }
+
+  h2 {
+    /*  font-size: 30px;*/
+    font-size: 5vw;
+    margin-right: 0px;
+  }
+  .rowInside {
+    display: none;
+  }
+}
+
+.india {
+  position: relative;
+  top: 17%;
+  left: 55%;
+  height: 140px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.eng {
+  position: relative;
+  left: 12%;
+  top: 32%;
+  height: 140px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.pakis {
+  position: relative;
+  left: 15%;
+  top: 1%;
+  height: 140px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.new {
+  position: relative;
+
+  top: 15%;
+  left: 12%;
+  height: 140px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.ban {
+  position: relative;
+  top: 30%;
+  left: 25%;
+  height: 140px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.afg {
+  position: relative;
+
+  top: 0%;
+  right: 50%;
+  height: 140px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.south {
+  position: relative;
+  top: 20%;
+  left: 10%;
+  height: 140px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.sri {
+  position: relative;
+  top: 5%;
+  left: 0%;
+  height: 140px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.nether {
+  position: relative;
+  top: 5%;
+  height: 140px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.aus {
+  position: relative;
+  top: 5%;
+  right: 23%;
+  height: 140px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.white3 {
+  box-shadow: 3px 1px 2px black;
+}
+.black3 {
+  box-shadow: 3px 1px 2px white;
+}
+
+@media screen and (min-width: 768px) {
+  .Outer-Home {
+    height: calc(100vh - 60px);
+
+    align-items: center;
+  }
+
+  .for-image-div {
+    display: none;
+  }
+
+  .rowInside {
+    display: flex;
+  }
+
+  h2 {
+    /* font-size: 2.31em;*/
+    font-size: 4.7vw;
+    margin-right: 0px;
+  }
+  .india {
+    position: relative;
+    top: 18%;
+    left: 54%;
+
+    width: 10vw;
+    border-radius: 50%;
+  }
+
+  .eng {
+    position: relative;
+    left: 10%;
+    top: 35%;
+    width: 10vw;
+    border-radius: 50%;
+  }
+
+  .pakis {
+    position: relative;
+    left: -75%;
+    top: 1%;
+    width: 10vw;
+    border-radius: 50%;
+  }
+
+  .new {
+    position: relative;
+
+    top: 18%;
+    left: 12%;
+    width: 10vw;
+    border-radius: 50%;
+  }
+
+  .ban {
+    position: relative;
+    top: 28%;
+    left: 26%;
+    width: 10vw;
+    border-radius: 50%;
+  }
+
+  .afg {
+    position: relative;
+
+    top: -6%;
+    right: 50%;
+    width: 10vw;
+    border-radius: 50%;
+  }
+
+  .south {
+    position: relative;
+    top: 9.6%;
+    left: 2.7%;
+    width: 10vw;
+    border-radius: 50%;
+  }
+
+  .sri {
+    position: relative;
+    top: 2%;
+    left: -10%;
+
+    width: 10vw;
+    border-radius: 50%;
+  }
+
+  .nether {
+    position: relative;
+    top: 7%;
+
+    width: 10vw;
+    border-radius: 50%;
+  }
+
+  .aus {
+    position: relative;
+    top: 5%;
+    right: 23%;
+
+    width: 10vw;
+    border-radius: 50%;
+  }
+
+  .white3 {
+    box-shadow: 2px 1px 1px black;
+  }
+
+  .black3 {
+    box-shadow: 2px 1px 1px white;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .Outer-Home div h2 {
+    font-size: 5vw;
+    margin-left: 12px;
+  }
+
+  .fortrophy {
+    width: 150px;
+    height: 200px;
+  }
+}

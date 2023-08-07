@@ -1,0 +1,25 @@
+.for-no-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  overflow: hidden;
+
+  padding: 0px;
+}
+
+.noResultsImage {
+  width: 350px;
+  border-radius: none;
+  margin-top: 40%;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+@media screen and (max-width: 400px) {
+  .noResultsImage {
+    width: 80%;
+    margin-top: 40%;
+  }
+}

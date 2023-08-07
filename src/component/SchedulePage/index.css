@@ -1,0 +1,298 @@
+.for-schedule-page {
+  /* background-color: hsl(225, 13%, 81%); 
+ 
+    background-image: linear-gradient(to right, rgb(42, 36, 36), rgb(76, 76, 122));*/
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding-top: 0.6%;
+  height: calc(100vh - 60px);
+  overflow: auto;
+}
+.align-without-center {
+  /* background-color: hsl(225, 13%, 81%);
+    background-image: linear-gradient(to right, rgb(42, 36, 36),
+                rgb(76, 76, 122));*/
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+
+  height: calc(100vh - 60px);
+}
+.forRow {
+  display: flex;
+  flex-direction: column;
+  width: 14.8%;
+  width: 204px;
+}
+
+.for-filter-button {
+  position: fixed;
+  width: 30px;
+  margin-left: 0px;
+  align-self: flex-start;
+
+  border: none;
+  font-family: cursive;
+}
+
+.for-Active {
+  width: 30px;
+
+  align-self: flex-start;
+  animation: move 0.4s ease-in-out forwards;
+
+  border: none;
+  font-weight: 500;
+  margin-right: 0px;
+  margin-top: 0%;
+  font-family: cursive;
+  border-left: rgb(181, 78, 37) solid 3px;
+}
+@keyframes move {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-radius: 20px;
+    border-right: rgb(181, 78, 37) solid 3px;
+    border-left: none;
+  }
+}
+
+.left-filterpart {
+  background-color: rgb(34, 33, 93);
+
+  display: flex;
+
+  flex-direction: column;
+
+  height: 100%;
+  padding: 45% 5%;
+  animation: moving 0.4s ease-in-out forwards;
+}
+@keyframes moving {
+  0% {
+    transform: translateX(-30%);
+  }
+
+  100% {
+    transform: translateX(0%);
+    border-right: rgb(41, 41, 39) solid 3px;
+  }
+}
+.right-mainPart {
+  overflow-y: scroll;
+  width: 100%;
+  margin-left: 10px;
+}
+.filter-width {
+  margin-top: 0.9%;
+  overflow-y: scroll;
+  width: 85vw;
+  margin-left: 10px;
+}
+
+.for-ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  margin-top: 4%;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+.for-input {
+  width: 50%;
+  position: fixed;
+  left: 46.6%;
+  margin-top: 0px;
+  padding: 1% 1%;
+  border-radius: 5px;
+  border: 1px solid rgb(11, 11, 11);
+}
+.for-input:hover {
+  border: 2px solid cadetblue;
+}
+
+.forSelect {
+  width: 100%;
+  border-radius: 3px;
+  font-weight: 500;
+  background-color: crimson;
+  background-color: rgb(66, 121, 138);
+
+  color: white;
+}
+.forSelect:hover {
+  background-color: rgb(246, 133, 3);
+
+  color: black;
+}
+
+.forForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: transparent;
+  border-radius: 10px;
+  border: rgb(255, 254, 254) solid 2px;
+  padding: 10px 0px;
+  padding-top: 30px 10px 30px 10px;
+}
+.forForm > div {
+  padding: 10px 0px;
+  margin: 0px 5px;
+}
+
+label {
+  color: white;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px 1px black;
+  margin-right: 5%;
+  font-style: italic;
+}
+button {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px 0px;
+  border: 1px solid white;
+  color: white;
+  width: 30%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+
+  margin-left: 5%;
+}
+.for-button {
+  width: 60px;
+  margin-left: 0%;
+}
+
+.for-reset {
+  margin-left: 0%;
+  width: 60px;
+}
+
+.for-filter-button:hover {
+  background-color: rgb(246, 133, 3);
+  background-color: rgb(66, 121, 138);
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+.for-reset:hover {
+  background-color: rgb(246, 133, 3);
+  background-color: rgb(66, 121, 138);
+  color: white;
+  border: none;
+}
+.for-button:hover {
+  background-color: rgb(246, 133, 3);
+  background-color: rgb(66, 121, 138);
+  color: white;
+  border: none;
+}
+
+.white-schedule {
+  background-color: rgba(242, 234, 228, 0.929);
+  color: black;
+}
+
+.black-schedule {
+  background-color: #121212;
+  color: #fff;
+}
+.bttn-black {
+  background-color: #121212;
+
+  margin-left: 5px;
+  cursor: pointer;
+}
+.btt-white {
+  background-color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.bttn-black:hover {
+  background-color: rgb(66, 121, 138);
+  color: black;
+  border: none;
+}
+
+.btt-white:hover {
+  background-color: rgb(66, 121, 138);
+  color: black;
+  border: none;
+}
+.leftPartTrue {
+  /*  background-color: rgba(29, 98, 72, 0.898);
+        background-color: hsla(29, 36%, 50%, 0.898); */
+  background-color: rgba(6, 0, 77, 0.973);
+  border-top-right-radius: 20px;
+}
+.leftPartFalse {
+  background-color: #242526;
+  border-top-right-radius: 20px;
+}
+
+.filterImg {
+  width: 16px;
+  border-radius: 50%;
+}
+
+.for-button-reset-go {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .filterImg {
+    width: 15px;
+  }
+  .for-filter-button {
+    width: 20px;
+    height: 25px;
+  }
+  .forRow {
+    width: 30vw;
+  }
+
+  .filter-width {
+    width: 70vw;
+  }
+
+  .leftPartTrue {
+    border-top-right-radius: 20px;
+  }
+  .leftPartFalse {
+    border-top-right-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 313px) {
+  label {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .for-input {
+    margin-right: 50px;
+  }
+}
